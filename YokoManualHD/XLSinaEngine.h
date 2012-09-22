@@ -40,6 +40,7 @@
 - (BOOL)isLogin;
 - (void)loginSina;
 - (void)logoutSina;
+- (void)attentionWeibo;
 
 #pragma mark - sina api
 - (void)sendStatus:(NSString *)status;

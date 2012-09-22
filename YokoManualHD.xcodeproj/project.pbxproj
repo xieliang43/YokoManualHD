@@ -7,14 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E0DFEEEC160D915D0095326E /* YKReadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0DFEEEB160D915D0095326E /* YKReadViewController.m */; };
+		E0DFEEF0160D96B60095326E /* face.png in Resources */ = {isa = PBXBuildFile; fileRef = E0DFEEEF160D96B60095326E /* face.png */; };
+		E0DFEEF5160D973F0095326E /* add.png in Resources */ = {isa = PBXBuildFile; fileRef = E0DFEEF1160D973F0095326E /* add.png */; };
+		E0DFEEF6160D973F0095326E /* share.png in Resources */ = {isa = PBXBuildFile; fileRef = E0DFEEF2160D973F0095326E /* share.png */; };
+		E0DFEEF7160D973F0095326E /* start_read_sel.png in Resources */ = {isa = PBXBuildFile; fileRef = E0DFEEF3160D973F0095326E /* start_read_sel.png */; };
+		E0DFEEF8160D973F0095326E /* start_read.png in Resources */ = {isa = PBXBuildFile; fileRef = E0DFEEF4160D973F0095326E /* start_read.png */; };
+		E0DFEEFC160D9DB10095326E /* contents_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = E0DFEEF9160D9DB10095326E /* contents_bg.png */; };
+		E0DFEEFD160D9DB10095326E /* contents_btn_sel.png in Resources */ = {isa = PBXBuildFile; fileRef = E0DFEEFA160D9DB10095326E /* contents_btn_sel.png */; };
+		E0DFEEFE160D9DB10095326E /* contents_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = E0DFEEFB160D9DB10095326E /* contents_btn.png */; };
 		E0FE1CD4160D56D40004C5BD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0FE1CD3160D56D40004C5BD /* UIKit.framework */; };
 		E0FE1CD6160D56D40004C5BD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0FE1CD5160D56D40004C5BD /* Foundation.framework */; };
 		E0FE1CD8160D56D40004C5BD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0FE1CD7160D56D40004C5BD /* CoreGraphics.framework */; };
 		E0FE1CDE160D56D40004C5BD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E0FE1CDC160D56D40004C5BD /* InfoPlist.strings */; };
 		E0FE1CE0160D56D40004C5BD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E0FE1CDF160D56D40004C5BD /* main.m */; };
 		E0FE1CE4160D56D40004C5BD /* YKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E0FE1CE3160D56D40004C5BD /* YKAppDelegate.m */; };
-		E0FE1CED160D56D50004C5BD /* YKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0FE1CEC160D56D50004C5BD /* YKViewController.m */; };
-		E0FE1CF0160D56D50004C5BD /* YKViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0FE1CEE160D56D50004C5BD /* YKViewController.xib */; };
 		E0FE1D3A160D583B0004C5BD /* LeavesCache.m in Sources */ = {isa = PBXBuildFile; fileRef = E0FE1D35160D583B0004C5BD /* LeavesCache.m */; };
 		E0FE1D3B160D583B0004C5BD /* LeavesView.m in Sources */ = {isa = PBXBuildFile; fileRef = E0FE1D37160D583B0004C5BD /* LeavesView.m */; };
 		E0FE1D3C160D583B0004C5BD /* LeavesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0FE1D39160D583B0004C5BD /* LeavesViewController.m */; };
@@ -46,6 +53,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E0DFEEEA160D915D0095326E /* YKReadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKReadViewController.h; sourceTree = "<group>"; };
+		E0DFEEEB160D915D0095326E /* YKReadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKReadViewController.m; sourceTree = "<group>"; };
+		E0DFEEEF160D96B60095326E /* face.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = face.png; sourceTree = "<group>"; };
+		E0DFEEF1160D973F0095326E /* add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add.png; sourceTree = "<group>"; };
+		E0DFEEF2160D973F0095326E /* share.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = share.png; sourceTree = "<group>"; };
+		E0DFEEF3160D973F0095326E /* start_read_sel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = start_read_sel.png; sourceTree = "<group>"; };
+		E0DFEEF4160D973F0095326E /* start_read.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = start_read.png; sourceTree = "<group>"; };
+		E0DFEEF9160D9DB10095326E /* contents_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = contents_bg.png; sourceTree = "<group>"; };
+		E0DFEEFA160D9DB10095326E /* contents_btn_sel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = contents_btn_sel.png; sourceTree = "<group>"; };
+		E0DFEEFB160D9DB10095326E /* contents_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = contents_btn.png; sourceTree = "<group>"; };
 		E0FE1CCF160D56D40004C5BD /* YokoManualHD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YokoManualHD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0FE1CD3160D56D40004C5BD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E0FE1CD5160D56D40004C5BD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -56,9 +73,6 @@
 		E0FE1CE1160D56D40004C5BD /* YokoManualHD-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YokoManualHD-Prefix.pch"; sourceTree = "<group>"; };
 		E0FE1CE2160D56D40004C5BD /* YKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YKAppDelegate.h; sourceTree = "<group>"; };
 		E0FE1CE3160D56D40004C5BD /* YKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YKAppDelegate.m; sourceTree = "<group>"; };
-		E0FE1CEB160D56D50004C5BD /* YKViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YKViewController.h; sourceTree = "<group>"; };
-		E0FE1CEC160D56D50004C5BD /* YKViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YKViewController.m; sourceTree = "<group>"; };
-		E0FE1CEF160D56D50004C5BD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/YKViewController.xib; sourceTree = "<group>"; };
 		E0FE1D34160D583B0004C5BD /* LeavesCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeavesCache.h; sourceTree = "<group>"; };
 		E0FE1D35160D583B0004C5BD /* LeavesCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeavesCache.m; sourceTree = "<group>"; };
 		E0FE1D36160D583B0004C5BD /* LeavesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeavesView.h; sourceTree = "<group>"; };
@@ -135,6 +149,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E0DFEEEE160D96A90095326E /* image */ = {
+			isa = PBXGroup;
+			children = (
+				E0DFEEF9160D9DB10095326E /* contents_bg.png */,
+				E0DFEEFA160D9DB10095326E /* contents_btn_sel.png */,
+				E0DFEEFB160D9DB10095326E /* contents_btn.png */,
+				E0DFEEEF160D96B60095326E /* face.png */,
+				E0DFEEF1160D973F0095326E /* add.png */,
+				E0DFEEF2160D973F0095326E /* share.png */,
+				E0DFEEF3160D973F0095326E /* start_read_sel.png */,
+				E0DFEEF4160D973F0095326E /* start_read.png */,
+			);
+			name = image;
+			sourceTree = "<group>";
+		};
 		E0FE1CC4160D56D40004C5BD = {
 			isa = PBXGroup;
 			children = (
@@ -178,12 +207,11 @@
 				E0FE1D33160D583B0004C5BD /* Leaves */,
 				E0FE1CE2160D56D40004C5BD /* YKAppDelegate.h */,
 				E0FE1CE3160D56D40004C5BD /* YKAppDelegate.m */,
-				E0FE1CEB160D56D50004C5BD /* YKViewController.h */,
-				E0FE1CEC160D56D50004C5BD /* YKViewController.m */,
-				E0FE1CEE160D56D50004C5BD /* YKViewController.xib */,
 				E0FE1D48160D5CD80004C5BD /* YKContentsViewController.h */,
 				E0FE1D49160D5CD80004C5BD /* YKContentsViewController.m */,
 				E0FE1D4A160D5CD80004C5BD /* YKContentsViewController.xib */,
+				E0DFEEEA160D915D0095326E /* YKReadViewController.h */,
+				E0DFEEEB160D915D0095326E /* YKReadViewController.m */,
 				E0FE1CDA160D56D40004C5BD /* Supporting Files */,
 			);
 			path = YokoManualHD;
@@ -192,6 +220,7 @@
 		E0FE1CDA160D56D40004C5BD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E0DFEEEE160D96A90095326E /* image */,
 				E0FE1CDB160D56D40004C5BD /* YokoManualHD-Info.plist */,
 				E0FE1CDC160D56D40004C5BD /* InfoPlist.strings */,
 				E0FE1CDF160D56D40004C5BD /* main.m */,
@@ -333,8 +362,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0FE1CDE160D56D40004C5BD /* InfoPlist.strings in Resources */,
-				E0FE1CF0160D56D50004C5BD /* YKViewController.xib in Resources */,
 				E0FE1D4C160D5CD80004C5BD /* YKContentsViewController.xib in Resources */,
+				E0DFEEF0160D96B60095326E /* face.png in Resources */,
+				E0DFEEF5160D973F0095326E /* add.png in Resources */,
+				E0DFEEF6160D973F0095326E /* share.png in Resources */,
+				E0DFEEF7160D973F0095326E /* start_read_sel.png in Resources */,
+				E0DFEEF8160D973F0095326E /* start_read.png in Resources */,
+				E0DFEEFC160D9DB10095326E /* contents_bg.png in Resources */,
+				E0DFEEFD160D9DB10095326E /* contents_btn_sel.png in Resources */,
+				E0DFEEFE160D9DB10095326E /* contents_btn.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,7 +383,6 @@
 			files = (
 				E0FE1CE0160D56D40004C5BD /* main.m in Sources */,
 				E0FE1CE4160D56D40004C5BD /* YKAppDelegate.m in Sources */,
-				E0FE1CED160D56D50004C5BD /* YKViewController.m in Sources */,
 				E0FE1D3A160D583B0004C5BD /* LeavesCache.m in Sources */,
 				E0FE1D3B160D583B0004C5BD /* LeavesView.m in Sources */,
 				E0FE1D3C160D583B0004C5BD /* LeavesViewController.m in Sources */,
@@ -369,6 +404,7 @@
 				E0FE1D85160D67150004C5BD /* SBJsonWriter.m in Sources */,
 				E0FE1D92160D68970004C5BD /* MBProgressHUD.m in Sources */,
 				E0FE1D99160D694A0004C5BD /* Reachability.m in Sources */,
+				E0DFEEEC160D915D0095326E /* YKReadViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,14 +417,6 @@
 				E0FE1CDD160D56D40004C5BD /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		E0FE1CEE160D56D50004C5BD /* YKViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E0FE1CEF160D56D50004C5BD /* en */,
-			);
-			name = YKViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -446,11 +474,15 @@
 		E0FE1CF4160D56D50004C5BD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: xie liang (5B252TW82Z)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: xie liang (5B252TW82Z)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YokoManualHD/YokoManualHD-Prefix.pch";
 				INFOPLIST_FILE = "YokoManualHD/YokoManualHD-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -458,11 +490,15 @@
 		E0FE1CF5160D56D50004C5BD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: xie liang (5B252TW82Z)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: xie liang (5B252TW82Z)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YokoManualHD/YokoManualHD-Prefix.pch";
 				INFOPLIST_FILE = "YokoManualHD/YokoManualHD-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

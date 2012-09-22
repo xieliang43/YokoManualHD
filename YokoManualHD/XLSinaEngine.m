@@ -156,5 +156,41 @@
     }
 }
 
+- (void)attentionWeibo
+{
+    NSString *urlStr = @"https://api.weibo.com/2/friendships/create.json";
+    NSURL *url = [NSURL URLWithString:urlStr];
+    ASIFormDataRequest *req = [ASIFormDataRequest requestWithURL:url];
+    req.requestMethod = @"POST";
+    req.delegate = self;
+    [req setPostValue:_access_token forKey:@"access_token"];
+    [req setPostValue:@"yokohamarubber" forKey:@"uid"];
+    req.didFinishSelector = @selector(didFinishAttention:);
+    req.didFailSelector = @selector(didFailAttention:);
+    [req startAsynchronous];
+}
+
+- (void)didFinishAttention:(ASIFormDataRequest *)request
+{
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示"
+                                                    message:@"关注官方微博成功！"
+                                                   delegate:nil
+                                          cancelButtonTitle:@"确定"
+                                          otherButtonTitles:nil];
+    [alert show];
+    [alert release];
+}
+
+- (void)didFailAttention:(ASIFormDataRequest *)request
+{
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示"
+                                                    message:@"关注官方微博失败！"
+                                                   delegate:nil
+                                          cancelButtonTitle:@"确定"
+                                          otherButtonTitles:nil];
+    [alert show];
+    [alert release];
+}
+
 
 @end

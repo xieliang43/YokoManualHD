@@ -14,20 +14,19 @@
 
 @implementation YKViewController
 
-- (void)dealloc
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
-    [_sinaEngine release];
-    [super dealloc];
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        // Custom initialization
+    }
+    return self;
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-    
-    _sinaEngine = [[XLSinaEngine alloc] init];
-    _sinaEngine.delegate = self;
-    _sinaEngine.rootViewController = self;
+    // Do any additional setup after loading the view from its nib.
 }
 
 - (void)didReceiveMemoryWarning
@@ -36,34 +35,4 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)atttionWeibo:(id)sender
-{
-    [_sinaEngine loginSina];
-}
-
-- (IBAction)shareToWeibo:(id)sender
-{
-    [_sinaEngine loginSina];
-}
-
-#pragma mark - XLSinaEngineDelegate
-- (void)didLoginSina
-{
-    Debug(@"登陆成功");
-}
-
-- (void)didFialdLoginSina
-{
-    
-}
-
-- (void)didFinishShareToSina
-{
-    
-}
-
-- (void)didFaildShareToSina
-{
-    
-}
 @end

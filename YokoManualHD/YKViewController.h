@@ -7,14 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "XLSinaEngine.h"
 
-@interface YKViewController : UIViewController<XLSinaEngineDelegate>
-{
-    XLSinaEngine *_sinaEngine;
-}
-
-- (IBAction)atttionWeibo:(id)sender;
-- (IBAction)shareToWeibo:(id)sender;
+@interface YKViewController : UIViewController
 
 @end
