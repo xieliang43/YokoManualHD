@@ -34,7 +34,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
-        UINavigationBar *naviBar = [[UINavigationBar alloc] init];
+        UINavigationBar *naviBar = [[UINavigationBar alloc] initWithFrame:CGRectMake(0, 0, 1024, 44)];
         [self.view addSubview:naviBar];
         [naviBar release];
         
@@ -135,7 +135,7 @@
     if ([_delegate respondsToSelector:@selector(didAuthorizeSina)]) {
         [_delegate didAuthorizeSina];
     }
-    [self.navigationController popViewControllerAnimated:YES];
+    [self dismissModalViewControllerAnimated:YES];
 }
 
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error

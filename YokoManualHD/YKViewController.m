@@ -43,13 +43,13 @@
 
 - (IBAction)shareToWeibo:(id)sender
 {
-    
+    [_sinaEngine loginSina];
 }
 
 #pragma mark - XLSinaEngineDelegate
 - (void)didLoginSina
 {
-    
+    Debug(@"登陆成功");
 }
 
 - (void)didFialdLoginSina

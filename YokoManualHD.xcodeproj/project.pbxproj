@@ -138,11 +138,6 @@
 		E0FE1CC4160D56D40004C5BD = {
 			isa = PBXGroup;
 			children = (
-				E0FE1D8E160D68270004C5BD /* libz.dylib */,
-				E0FE1D8C160D68200004C5BD /* SystemConfiguration.framework */,
-				E0FE1D8A160D681A0004C5BD /* CFNetwork.framework */,
-				E0FE1D88160D68100004C5BD /* MobileCoreServices.framework */,
-				E0FE1D86160D67B70004C5BD /* libcurses.dylib */,
 				E0FE1CD9160D56D40004C5BD /* YokoManualHD */,
 				E0FE1CD2160D56D40004C5BD /* Frameworks */,
 				E0FE1CD0160D56D40004C5BD /* Products */,
@@ -160,6 +155,11 @@
 		E0FE1CD2160D56D40004C5BD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E0FE1D8E160D68270004C5BD /* libz.dylib */,
+				E0FE1D8C160D68200004C5BD /* SystemConfiguration.framework */,
+				E0FE1D8A160D681A0004C5BD /* CFNetwork.framework */,
+				E0FE1D88160D68100004C5BD /* MobileCoreServices.framework */,
+				E0FE1D86160D67B70004C5BD /* libcurses.dylib */,
 				E0FE1D3E160D5A6E0004C5BD /* QuartzCore.framework */,
 				E0FE1CD3160D56D40004C5BD /* UIKit.framework */,
 				E0FE1CD5160D56D40004C5BD /* Foundation.framework */,
@@ -171,10 +171,7 @@
 		E0FE1CD9160D56D40004C5BD /* YokoManualHD */ = {
 			isa = PBXGroup;
 			children = (
-				E0FE1D97160D69490004C5BD /* Reachability.h */,
-				E0FE1D98160D69490004C5BD /* Reachability.m */,
-				E0FE1D90160D68960004C5BD /* MBProgressHUD.h */,
-				E0FE1D91160D68970004C5BD /* MBProgressHUD.m */,
+				E0FE1D9A160D6B9C0004C5BD /* thirdpart */,
 				E0FE1D58160D67150004C5BD /* asihttp */,
 				E0FE1D6D160D67150004C5BD /* sbjson */,
 				E0FE1D51160D5EDA0004C5BD /* sinashare */,
@@ -270,6 +267,17 @@
 				E0FE1D78160D67150004C5BD /* SBJsonWriter.m */,
 			);
 			path = sbjson;
+			sourceTree = "<group>";
+		};
+		E0FE1D9A160D6B9C0004C5BD /* thirdpart */ = {
+			isa = PBXGroup;
+			children = (
+				E0FE1D97160D69490004C5BD /* Reachability.h */,
+				E0FE1D98160D69490004C5BD /* Reachability.m */,
+				E0FE1D90160D68960004C5BD /* MBProgressHUD.h */,
+				E0FE1D91160D68970004C5BD /* MBProgressHUD.m */,
+			);
+			name = thirdpart;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

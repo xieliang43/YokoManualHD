@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "MBProgressHUD.h"
+#import "NSString+SBJSON.h"
 
 @class XLSinaEngine;
 
