@@ -16,6 +16,13 @@
 		E0DFEEFC160D9DB10095326E /* contents_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = E0DFEEF9160D9DB10095326E /* contents_bg.png */; };
 		E0DFEEFD160D9DB10095326E /* contents_btn_sel.png in Resources */ = {isa = PBXBuildFile; fileRef = E0DFEEFA160D9DB10095326E /* contents_btn_sel.png */; };
 		E0DFEEFE160D9DB10095326E /* contents_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = E0DFEEFB160D9DB10095326E /* contents_btn.png */; };
+		E0F2B022160DAE76007127A8 /* YKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0F2B01F160DAE76007127A8 /* YKViewController.m */; };
+		E0F2B023160DAE76007127A8 /* YKViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0F2B021160DAE76007127A8 /* YKViewController.xib */; };
+		E0F2B027160DB33B007127A8 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = E0F2B026160DB33B007127A8 /* back.png */; };
+		E0F2B02D160DB49F007127A8 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E0F2B029160DB49F007127A8 /* 1.jpg */; };
+		E0F2B02E160DB49F007127A8 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E0F2B02A160DB49F007127A8 /* 2.jpg */; };
+		E0F2B02F160DB49F007127A8 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E0F2B02B160DB49F007127A8 /* 3.jpg */; };
+		E0F2B030160DB49F007127A8 /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E0F2B02C160DB49F007127A8 /* 4.jpg */; };
 		E0FE1CD4160D56D40004C5BD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0FE1CD3160D56D40004C5BD /* UIKit.framework */; };
 		E0FE1CD6160D56D40004C5BD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0FE1CD5160D56D40004C5BD /* Foundation.framework */; };
 		E0FE1CD8160D56D40004C5BD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0FE1CD7160D56D40004C5BD /* CoreGraphics.framework */; };
@@ -63,6 +70,14 @@
 		E0DFEEF9160D9DB10095326E /* contents_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = contents_bg.png; sourceTree = "<group>"; };
 		E0DFEEFA160D9DB10095326E /* contents_btn_sel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = contents_btn_sel.png; sourceTree = "<group>"; };
 		E0DFEEFB160D9DB10095326E /* contents_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = contents_btn.png; sourceTree = "<group>"; };
+		E0F2B01F160DAE76007127A8 /* YKViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKViewController.m; sourceTree = "<group>"; };
+		E0F2B020160DAE76007127A8 /* YKViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKViewController.h; sourceTree = "<group>"; };
+		E0F2B021160DAE76007127A8 /* YKViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YKViewController.xib; sourceTree = "<group>"; };
+		E0F2B026160DB33B007127A8 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		E0F2B029160DB49F007127A8 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		E0F2B02A160DB49F007127A8 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		E0F2B02B160DB49F007127A8 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
+		E0F2B02C160DB49F007127A8 /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
 		E0FE1CCF160D56D40004C5BD /* YokoManualHD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YokoManualHD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0FE1CD3160D56D40004C5BD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E0FE1CD5160D56D40004C5BD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -160,8 +175,20 @@
 				E0DFEEF2160D973F0095326E /* share.png */,
 				E0DFEEF3160D973F0095326E /* start_read_sel.png */,
 				E0DFEEF4160D973F0095326E /* start_read.png */,
+				E0F2B026160DB33B007127A8 /* back.png */,
 			);
 			name = image;
+			sourceTree = "<group>";
+		};
+		E0F2B028160DB496007127A8 /* contents */ = {
+			isa = PBXGroup;
+			children = (
+				E0F2B029160DB49F007127A8 /* 1.jpg */,
+				E0F2B02A160DB49F007127A8 /* 2.jpg */,
+				E0F2B02B160DB49F007127A8 /* 3.jpg */,
+				E0F2B02C160DB49F007127A8 /* 4.jpg */,
+			);
+			name = contents;
 			sourceTree = "<group>";
 		};
 		E0FE1CC4160D56D40004C5BD = {
@@ -207,6 +234,9 @@
 				E0FE1D33160D583B0004C5BD /* Leaves */,
 				E0FE1CE2160D56D40004C5BD /* YKAppDelegate.h */,
 				E0FE1CE3160D56D40004C5BD /* YKAppDelegate.m */,
+				E0F2B020160DAE76007127A8 /* YKViewController.h */,
+				E0F2B01F160DAE76007127A8 /* YKViewController.m */,
+				E0F2B021160DAE76007127A8 /* YKViewController.xib */,
 				E0FE1D48160D5CD80004C5BD /* YKContentsViewController.h */,
 				E0FE1D49160D5CD80004C5BD /* YKContentsViewController.m */,
 				E0FE1D4A160D5CD80004C5BD /* YKContentsViewController.xib */,
@@ -220,6 +250,7 @@
 		E0FE1CDA160D56D40004C5BD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E0F2B028160DB496007127A8 /* contents */,
 				E0DFEEEE160D96A90095326E /* image */,
 				E0FE1CDB160D56D40004C5BD /* YokoManualHD-Info.plist */,
 				E0FE1CDC160D56D40004C5BD /* InfoPlist.strings */,
@@ -371,6 +402,12 @@
 				E0DFEEFC160D9DB10095326E /* contents_bg.png in Resources */,
 				E0DFEEFD160D9DB10095326E /* contents_btn_sel.png in Resources */,
 				E0DFEEFE160D9DB10095326E /* contents_btn.png in Resources */,
+				E0F2B023160DAE76007127A8 /* YKViewController.xib in Resources */,
+				E0F2B027160DB33B007127A8 /* back.png in Resources */,
+				E0F2B02D160DB49F007127A8 /* 1.jpg in Resources */,
+				E0F2B02E160DB49F007127A8 /* 2.jpg in Resources */,
+				E0F2B02F160DB49F007127A8 /* 3.jpg in Resources */,
+				E0F2B030160DB49F007127A8 /* 4.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +442,7 @@
 				E0FE1D92160D68970004C5BD /* MBProgressHUD.m in Sources */,
 				E0FE1D99160D694A0004C5BD /* Reachability.m in Sources */,
 				E0DFEEEC160D915D0095326E /* YKReadViewController.m in Sources */,
+				E0F2B022160DAE76007127A8 /* YKViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

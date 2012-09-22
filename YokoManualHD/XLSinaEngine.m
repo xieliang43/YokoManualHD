@@ -164,7 +164,7 @@
     req.requestMethod = @"POST";
     req.delegate = self;
     [req setPostValue:_access_token forKey:@"access_token"];
-    [req setPostValue:@"yokohamarubber" forKey:@"uid"];
+    [req setPostValue:@"1807566823" forKey:@"uid"];
     req.didFinishSelector = @selector(didFinishAttention:);
     req.didFailSelector = @selector(didFailAttention:);
     [req startAsynchronous];
@@ -172,6 +172,7 @@
 
 - (void)didFinishAttention:(ASIFormDataRequest *)request
 {
+    NSLog(@"%@",request.responseString);
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示"
                                                     message:@"关注官方微博成功！"
                                                    delegate:nil

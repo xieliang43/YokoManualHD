@@ -10,10 +10,10 @@
 
 @interface YKReadViewController : LeavesViewController
 {
-    NSString *isHideBars;
     NSMutableArray *imageArray;
+    NSInteger _curPage;
 }
 
-@property (nonatomic,retain) NSString *isHideBars;
+@property (nonatomic,assign) NSInteger curPage;
 
 @end

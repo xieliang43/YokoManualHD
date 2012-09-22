@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "YKReadViewController.h"
 
 @interface YKContentsViewController : UIViewController
+
+- (IBAction)goBack:(id)sender;
+- (IBAction)goToRead:(UIButton *)sender;
 
 @end

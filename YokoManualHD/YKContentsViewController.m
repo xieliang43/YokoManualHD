@@ -35,4 +35,22 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
+    return (interfaceOrientation == UIDeviceOrientationLandscapeRight) || (interfaceOrientation == UIDeviceOrientationLandscapeLeft);
+}
+
+- (IBAction)goBack:(id)sender
+{
+    [self dismissModalViewControllerAnimated:YES];
+}
+
+- (IBAction)goToRead:(UIButton *)sender
+{
+    YKReadViewController *readViewCon = [[YKReadViewController alloc] initWithNibName:nil bundle:nil];
+    readViewCon.curPage = sender.tag;
+    [self.navigationController pushViewController:readViewCon animated:YES];
+    [readViewCon release];
+}
+
 @end

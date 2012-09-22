@@ -39,6 +39,7 @@
         [naviBar release];
         
         UINavigationItem *naviItem = [[UINavigationItem alloc] init];
+        naviItem.title = @"登陆sina微博";
         [naviBar pushNavigationItem:naviItem animated:YES];
         [naviItem release];
         
@@ -48,6 +49,8 @@
                                                                     action:@selector(goBack)];
         naviItem.leftBarButtonItem = backItem;
         [backItem release];
+        
+        self.title = @"登陆sina微博";
     }
     return self;
 }
@@ -76,7 +79,7 @@
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+    return (interfaceOrientation == UIDeviceOrientationLandscapeRight) || (interfaceOrientation == UIDeviceOrientationLandscapeLeft);
 }
 
 #pragma mark - UIWebViewDelegate

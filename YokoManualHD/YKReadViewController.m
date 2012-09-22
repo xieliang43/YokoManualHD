@@ -14,13 +14,11 @@
 
 @implementation YKReadViewController
 
-@synthesize isHideBars;
+@synthesize curPage = _curPage;
 
 - (void)dealloc
 {
-    [isHideBars release];
     [imageArray release];
-    [self removeObserver:self forKeyPath:@"isHideBars"];
     [super dealloc];
 }
 
@@ -31,38 +29,31 @@
         // Custom initialization
         self.title = @"YOKOHAMA节油手册";
         
-        imageArray = [[NSMutableArray array] retain];
-        for (int i = 1; i <= 31; i++) {
-            NSString *name = [NSString stringWithFormat:@"%d.jpg",i];
-            UIImage *img = [UIImage imageNamed:name];
-            [imageArray addObject:img];
-        }
+        //self.wantsFullScreenLayout = YES;
+        //[[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleBlackTranslucent];
         
-        self.wantsFullScreenLayout = YES;
-        [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleBlackTranslucent];
-        
-        [self addObserver:self forKeyPath:@"isHideBars" options:NSKeyValueObservingOptionNew context:nil];
-        
-        UITapGestureRecognizer *singleTapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self
-                                                                                           action:@selector(showBars:)];
-        [self.view addGestureRecognizer:singleTapGesture];
-        [singleTapGesture release];
+        UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        backBtn.frame = CGRectMake(1024 - 80, 20, 50, 50);
+        [backBtn setImage:[UIImage imageNamed:@"back.png"] forState:UIControlStateNormal];
+        [backBtn addTarget:self action:@selector(goBack) forControlEvents:UIControlEventTouchUpInside];
+        [self.view addSubview:backBtn];
 
     }
     return self;
+}
+
+- (void)goBack
+{
+    [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    [self setValue:@"YES" forKeyPath:@"isHideBars"];
-}
-
-- (void)viewWillDisappear:(BOOL)animated
-{
-    [super viewWillDisappear:animated];
-    [[self class] cancelPreviousPerformRequestsWithTarget:self];
+    
+    leavesView.currentPageIndex = _curPage;
+    [leavesView reloadData];
 }
 
 - (void)viewDidUnload
@@ -76,42 +67,14 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
-- (void)observeValueForKeyPath:(NSString *)keyPath
-                      ofObject:(id)object
-                        change:(NSDictionary *)change
-                       context:(void *)context
-{
-    NSLog(@"%@",[change description]);
-    [[self class] cancelPreviousPerformRequestsWithTarget:self];
-    if ([[change objectForKey:@"new"] isEqualToString:@"YES"]) {
-        [self performSelector:@selector(hideBars) withObject:nil afterDelay:3];
-    }
-}
-
-- (void)showBars:(UITapGestureRecognizer *)gesture
-{
-    CGPoint point = [gesture locationInView:self.view];
-    if (point.x > 100 && point.x < 220) {
-        [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationFade];
-        [self.navigationController setNavigationBarHidden:NO animated:YES];
-        
-        [self setValue:@"YES" forKeyPath:@"isHideBars"];
-    }
-}
-
-- (void)hideBars
-{
-    [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationFade];
-    [self.navigationController setNavigationBarHidden:YES animated:YES];
-}
-
 #pragma mark LeavesViewDataSource methods
 - (NSUInteger) numberOfPagesInLeavesView:(LeavesView*)leavesView {
-	return [imageArray count];
+	return 4;
 }
 
 - (void) renderPageAtIndex:(NSUInteger)index inContext:(CGContextRef)ctx {
-    UIImage *image = [imageArray objectAtIndex:index];
+    NSString *name = [NSString stringWithFormat:@"%d.jpg",index + 1];
+    UIImage *image = [UIImage imageNamed:name];
 	CGRect imageRect = CGRectMake(0, 0, image.size.width, image.size.height);
 	CGAffineTransform transform = aspectFit(imageRect,CGContextGetClipBoundingBox(ctx));
 	CGContextConcatCTM(ctx, transform);
