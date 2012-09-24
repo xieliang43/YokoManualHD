@@ -47,8 +47,9 @@
 
 - (IBAction)goToRead:(UIButton *)sender
 {
+    Debug(@"%d",sender.tag);
     YKReadViewController *readViewCon = [[YKReadViewController alloc] initWithNibName:nil bundle:nil];
-    readViewCon.curPage = sender.tag;
+    [readViewCon setCurrentPage:sender.tag];
     [self.navigationController pushViewController:readViewCon animated:YES];
     [readViewCon release];
 }

@@ -14,8 +14,6 @@
 
 @implementation YKReadViewController
 
-@synthesize curPage = _curPage;
-
 - (void)dealloc
 {
     [imageArray release];
@@ -52,8 +50,6 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-    leavesView.currentPageIndex = _curPage;
-    [leavesView reloadData];
 }
 
 - (void)viewDidUnload
@@ -64,12 +60,17 @@
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+    return (interfaceOrientation == UIDeviceOrientationLandscapeRight) || (interfaceOrientation == UIDeviceOrientationLandscapeLeft);
+}
+
+- (void)setCurrentPage:(NSInteger)page
+{
+    [leavesView setCurrentPageIndex:page];
 }
 
 #pragma mark LeavesViewDataSource methods
 - (NSUInteger) numberOfPagesInLeavesView:(LeavesView*)leavesView {
-	return 4;
+	return 18;
 }
 
 - (void) renderPageAtIndex:(NSUInteger)index inContext:(CGContextRef)ctx {

@@ -11,9 +11,8 @@
 @interface YKReadViewController : LeavesViewController
 {
     NSMutableArray *imageArray;
-    NSInteger _curPage;
 }
 
-@property (nonatomic,assign) NSInteger curPage;
+- (void)setCurrentPage:(NSInteger)page;
 
 @end

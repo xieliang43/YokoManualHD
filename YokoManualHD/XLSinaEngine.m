@@ -172,7 +172,6 @@
 
 - (void)didFinishAttention:(ASIFormDataRequest *)request
 {
-    NSLog(@"%@",request.responseString);
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示"
                                                     message:@"关注官方微博成功！"
                                                    delegate:nil
