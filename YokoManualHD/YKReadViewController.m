@@ -70,11 +70,11 @@
 
 #pragma mark LeavesViewDataSource methods
 - (NSUInteger) numberOfPagesInLeavesView:(LeavesView*)leavesView {
-	return 18;
+	return 31;
 }
 
 - (void) renderPageAtIndex:(NSUInteger)index inContext:(CGContextRef)ctx {
-    NSString *name = [NSString stringWithFormat:@"%d.jpg",index + 1];
+    NSString *name = [NSString stringWithFormat:@"%d.jpg",index];
     UIImage *image = [UIImage imageNamed:name];
 	CGRect imageRect = CGRectMake(0, 0, image.size.width, image.size.height);
 	CGAffineTransform transform = aspectFit(imageRect,CGContextGetClipBoundingBox(ctx));
