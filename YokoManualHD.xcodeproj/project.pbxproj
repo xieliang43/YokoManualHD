@@ -648,15 +648,15 @@
 		E0FE1CF5160D56D50004C5BD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: xie liang (5B252TW82Z)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: xie liang (5B252TW82Z)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: xie liang";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: xie liang";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YokoManualHD/YokoManualHD-Prefix.pch";
 				INFOPLIST_FILE = "YokoManualHD/YokoManualHD-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "5B362ECD-01CF-446F-8F83-E24835200867";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "5B362ECD-01CF-446F-8F83-E24835200867";
+				PROVISIONING_PROFILE = "3416E042-AE0D-4D94-948A-64DB67959D61";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "3416E042-AE0D-4D94-948A-64DB67959D61";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
