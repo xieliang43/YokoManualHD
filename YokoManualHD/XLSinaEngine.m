@@ -122,7 +122,7 @@
     }
 }
 
-- (void)sendStatus:(NSString *)status withImage:(UIImage *)image longitude:(float)longitude latitude:(float)latitude
+- (void)sendStatus:(NSString *)status withImage:(NSData *)imageData longitude:(float)longitude latitude:(float)latitude
 {
     NSString *urlStr = @"https://upload.api.weibo.com/2/statuses/upload.json";
     NSURL *url = [NSURL URLWithString:urlStr];
@@ -131,10 +131,9 @@
     req.delegate = self;
     [req setPostValue:_access_token forKey:@"access_token"];
     [req setPostValue:[status stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding] forKey:@"status"];
-    NSData *data = UIImageJPEGRepresentation(image, 0.8);
     [req setPostValue:[NSString stringWithFormat:@"%.1f",longitude] forKey:@"long"];
     [req setPostValue:[NSString stringWithFormat:@"%.1f",latitude] forKey:@"lat"];
-    [req addData:data forKey:@"pic"];
+    [req addData:imageData forKey:@"pic"];
     req.didFinishSelector = @selector(didFinishSendStatusWithImage:);
     req.didFailSelector = @selector(didFailSendStatusWithImage:);
     [req startAsynchronous];

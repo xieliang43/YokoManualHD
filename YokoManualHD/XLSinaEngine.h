@@ -44,7 +44,7 @@
 
 #pragma mark - sina api
 - (void)sendStatus:(NSString *)status;
-- (void)sendStatus:(NSString *)status withImage:(UIImage *)image longitude:(float)longitude latitude:(float)latitude;
+- (void)sendStatus:(NSString *)status withImage:(NSData *)imageData longitude:(float)longitude latitude:(float)latitude;
 
 @end
 

@@ -62,14 +62,14 @@
 
 - (IBAction)atttionWeibo:(id)sender
 {
-    [_sinaEngine loginSina];
     _flag = 0;
+    [_sinaEngine loginSina];
 }
 
 - (IBAction)shareToWeibo:(id)sender
 {
-    [_sinaEngine loginSina];
     _flag = 1;
+    [_sinaEngine loginSina];    
 }
 
 #pragma mark - XLSinaEngineDelegate
@@ -79,7 +79,8 @@
     if (_flag == 0) {
         [_sinaEngine attentionWeibo];
     }else{
-        [_sinaEngine sendStatus:@"yokohama节油手册"];
+        NSString *str = @"#优科豪马节油手册# 物价疯涨，钱袋吃紧，勤俭持家从节约点滴汽油开始，超级实用的节油秘笈分享给你们，从此告别高油价带来的烦恼。@优科豪马橡胶 各种版本节油秘笈下载 http://champion.yokohama.com.cn/site/main";
+        [_sinaEngine sendStatus:str withImage:[NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"1" ofType:@"jpg"]] longitude:0 latitude:0];
     }
 }
 
